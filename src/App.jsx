@@ -128,6 +128,29 @@ function App() {
         </p>
       </section>
 
+      <section className="py-20 px-8 bg-black">
+        <h2 className="text-4xl font-bold text-center text-yellow-500 mb-12">
+          Client Reviews
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-gray-900 p-6 rounded-xl">
+            <p>"Amazing service and support."</p>
+            <h4 className="mt-4 text-yellow-500">John Smith</h4>
+          </div>
+
+          <div className="bg-gray-900 p-6 rounded-xl">
+            <p>"Professional team and fast delivery."</p>
+            <h4 className="mt-4 text-yellow-500">Sarah Johnson</h4>
+          </div>
+
+          <div className="bg-gray-900 p-6 rounded-xl">
+            <p>"Highly recommended for IT solutions."</p>
+            <h4 className="mt-4 text-yellow-500">David Wilson</h4>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section
         id="contact"
