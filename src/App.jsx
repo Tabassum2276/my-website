@@ -1,3 +1,6 @@
+
+import hero from "./assets/hero.jpg";
+
 function App() {
   return (
     <div className="bg-black text-white min-h-screen">
@@ -19,20 +22,29 @@ function App() {
       {/* Hero */}
       <section
         id="home"
-        className="text-center py-28 px-6 bg-gradient-to-b from-black to-gray-900"
+        className="relative h-screen flex items-center justify-center text-center"
+        style={{
+          backgroundImage: `url(${hero})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
-        <h1 className="text-6xl md:text-7xl font-bold text-yellow-500 mb-6">
-          My Website
-        </h1>
+        <div className="absolute inset-0 bg-black/70"></div>
 
-        <p className="text-xl max-w-3xl mx-auto text-gray-300">
-          Premium IT Solutions, Web Development, Mobile Apps,
-          Cloud Services and Digital Transformation for modern businesses.
-        </p>
+        <div className="relative z-10 px-6">
+          <h1 className="text-6xl md:text-8xl font-bold text-yellow-500 mb-6">
+            My Website
+          </h1>
 
-        <button className="mt-8 bg-yellow-500 text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition">
-          Get Free Consultation
-        </button>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200">
+            Premium IT Solutions, Web Development, Mobile Apps,
+            Cloud Services and Digital Transformation.
+          </p>
+
+          <button className="mt-8 bg-yellow-500 text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition">
+            Get Free Consultation
+          </button>
+        </div>
       </section>
 
       {/* Services */}
