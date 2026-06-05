@@ -1,70 +1,72 @@
 function App() {
   return (
-    <div className="font-sans">
+    <div className="bg-black text-white min-h-screen">
 
       {/* Navbar */}
-      <nav className="bg-slate-900 text-white px-8 py-5 flex justify-between items-center">
-        <h1 className="text-3xl font-bold">My Website</h1>
+      <nav className="flex justify-between items-center px-8 py-5 border-b border-yellow-600">
+        <h1 className="text-3xl font-bold text-yellow-500">
+          My Website
+        </h1>
 
-        <ul className="hidden md:flex gap-6">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div className="space-x-6 hidden md:block">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
 
       {/* Hero */}
       <section
         id="home"
-        className="bg-gradient-to-r from-blue-700 to-indigo-900 text-white py-28 px-6 text-center"
+        className="text-center py-28 px-6 bg-gradient-to-b from-black to-gray-900"
       >
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+        <h1 className="text-6xl md:text-7xl font-bold text-yellow-500 mb-6">
           My Website
         </h1>
 
-        <p className="text-xl max-w-3xl mx-auto mb-8">
-          Professional IT Solutions, Web Development, Mobile Apps,
+        <p className="text-xl max-w-3xl mx-auto text-gray-300">
+          Premium IT Solutions, Web Development, Mobile Apps,
           Cloud Services and Digital Transformation for modern businesses.
         </p>
 
-        <button className="bg-white text-blue-700 px-8 py-4 rounded-full font-bold hover:scale-105 transition">
-          Get Started
+        <button className="mt-8 bg-yellow-500 text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition">
+          Get Free Consultation
         </button>
       </section>
 
       {/* Services */}
       <section id="services" className="py-20 px-8">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center text-yellow-500 mb-12">
           Our Services
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
 
-          <div className="shadow-xl p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-3">
+          <div className="bg-gray-900 p-8 rounded-2xl border border-yellow-500 hover:scale-105 transition">
+            <h3 className="text-2xl font-bold mb-4 text-yellow-400">
               Web Development
             </h3>
-            <p>
-              Fast, responsive and modern business websites.
+            <p className="text-gray-300">
+              Responsive websites built with modern technologies.
             </p>
           </div>
 
-          <div className="shadow-xl p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-3">
+          <div className="bg-gray-900 p-8 rounded-2xl border border-yellow-500 hover:scale-105 transition">
+            <h3 className="text-2xl font-bold mb-4 text-yellow-400">
               Mobile Apps
             </h3>
-            <p>
-              Android and iOS applications built for growth.
+            <p className="text-gray-300">
+              Android and iOS apps designed for business growth.
             </p>
           </div>
 
-          <div className="shadow-xl p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-3">
+          <div className="bg-gray-900 p-8 rounded-2xl border border-yellow-500 hover:scale-105 transition">
+            <h3 className="text-2xl font-bold mb-4 text-yellow-400">
               Cloud Solutions
             </h3>
-            <p>
-              Secure and scalable cloud infrastructure services.
+            <p className="text-gray-300">
+              Secure and scalable cloud infrastructure.
             </p>
           </div>
 
@@ -72,26 +74,26 @@ function App() {
       </section>
 
       {/* Stats */}
-      <section className="bg-slate-900 text-white py-20">
+      <section className="py-20 bg-gray-950">
         <div className="grid md:grid-cols-4 gap-8 text-center">
 
           <div>
-            <h3 className="text-5xl font-bold">100+</h3>
+            <h3 className="text-5xl font-bold text-yellow-500">100+</h3>
             <p>Projects</p>
           </div>
 
           <div>
-            <h3 className="text-5xl font-bold">50+</h3>
+            <h3 className="text-5xl font-bold text-yellow-500">50+</h3>
             <p>Clients</p>
           </div>
 
           <div>
-            <h3 className="text-5xl font-bold">5+</h3>
-            <p>Years Experience</p>
+            <h3 className="text-5xl font-bold text-yellow-500">10+</h3>
+            <p>Experts</p>
           </div>
 
           <div>
-            <h3 className="text-5xl font-bold">24/7</h3>
+            <h3 className="text-5xl font-bold text-yellow-500">24/7</h3>
             <p>Support</p>
           </div>
 
@@ -101,67 +103,48 @@ function App() {
       {/* About */}
       <section
         id="about"
-        className="py-20 px-8 bg-gray-100 text-center"
+        className="py-20 px-8 text-center"
       >
-        <h2 className="text-4xl font-bold mb-6">
+        <h2 className="text-4xl font-bold text-yellow-500 mb-6">
           About Us
         </h2>
 
-        <p className="max-w-3xl mx-auto text-lg leading-8">
-          My Website is an innovative IT company providing
-          software development, web solutions, cloud services,
-          and digital transformation strategies for businesses
-          worldwide.
+        <p className="max-w-3xl mx-auto text-lg text-gray-300 leading-8">
+          We help businesses grow through innovative technology,
+          modern web applications, cloud infrastructure,
+          and digital transformation strategies.
         </p>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-20 px-8">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Why Choose Us
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-8 text-center">
-
-          <div className="p-6 shadow-lg rounded-xl">
-            <h3 className="text-xl font-bold mb-3">
-              Expert Team
-            </h3>
-            <p>Experienced developers and consultants.</p>
-          </div>
-
-          <div className="p-6 shadow-lg rounded-xl">
-            <h3 className="text-xl font-bold mb-3">
-              Modern Technology
-            </h3>
-            <p>Latest frameworks and cloud solutions.</p>
-          </div>
-
-          <div className="p-6 shadow-lg rounded-xl">
-            <h3 className="text-xl font-bold mb-3">
-              Fast Delivery
-            </h3>
-            <p>On-time project completion and support.</p>
-          </div>
-
-        </div>
       </section>
 
       {/* Contact */}
       <section
         id="contact"
-        className="bg-slate-900 text-white py-20 px-8 text-center"
+        className="py-20 bg-gray-950 text-center"
       >
-        <h2 className="text-4xl font-bold mb-6">
+        <h2 className="text-4xl font-bold text-yellow-500 mb-6">
           Contact Us
         </h2>
 
         <p>Email: info@mywebsite.com</p>
         <p>Phone: +91 9876543210</p>
+
+        <button className="mt-8 bg-yellow-500 text-black px-8 py-3 rounded-full font-bold">
+          Contact Now
+        </button>
       </section>
 
+      {/* WhatsApp */}
+      <a
+        href="https://wa.me/919876543210"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-4 rounded-full shadow-lg"
+      >
+        WhatsApp
+      </a>
+
       {/* Footer */}
-      <footer className="bg-black text-white text-center py-6">
+      <footer className="text-center py-6 border-t border-yellow-600">
         © 2026 My Website. All Rights Reserved.
       </footer>
 
