@@ -1,6 +1,6 @@
 
 import hero from "./assets/hero2.jpg";
-import logo from "./assets/logo.png";
+import logo from "./assets2/logo.png";
 
 function App() {
   return (
