@@ -151,22 +151,59 @@ function App() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section
-        id="contact"
-        className="py-20 bg-gray-950 text-center"
-      >
-        <h2 className="text-4xl font-bold text-yellow-500 mb-6">
-          Contact Us
+      <section className="py-20 px-8">
+        <h2 className="text-4xl font-bold text-center text-yellow-500 mb-12">
+          Frequently Asked Questions
         </h2>
 
-        <p>Email: info@mywebsite.com</p>
-        <p>Phone: +91 9876543210</p>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div>
+            <h3 className="text-xl font-bold">
+              How long does a website take?
+            </h3>
+            <p className="text-gray-300">
+              Most websites are delivered within 1–3 weeks.
+            </p>
+          </div>
 
-        <button className="mt-8 bg-yellow-500 text-black px-8 py-3 rounded-full font-bold">
-          Contact Now
-        </button>
+          <div>
+            <h3 className="text-xl font-bold">
+              Do you provide support?
+            </h3>
+            <p className="text-gray-300">
+              Yes, we provide ongoing support and maintenance.
+            </p>
+          </div>
+        </div>
       </section>
+
+      {/* Contact */}
+      <form className="max-w-xl mx-auto space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          className="w-full p-4 rounded bg-gray-800 border border-yellow-500"
+        />
+
+        <input
+          type="email"
+          placeholder="Your Email"
+          className="w-full p-4 rounded bg-gray-800 border border-yellow-500"
+        />
+
+        <textarea
+          rows="5"
+          placeholder="Your Message"
+          className="w-full p-4 rounded bg-gray-800 border border-yellow-500"
+        ></textarea>
+
+        <button
+          type="submit"
+          className="bg-yellow-500 text-black px-8 py-3 rounded-full font-bold"
+        >
+          Send Message
+        </button>
+      </form>
 
       {/* WhatsApp */}
       <a
